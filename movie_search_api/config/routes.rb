@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :movies, only: [:create, :index] do
         get 'movie_filter', on: :collection
         get 'date_filter', on: :collection
+        get 'titles', on: :collection
       end
     end
   end

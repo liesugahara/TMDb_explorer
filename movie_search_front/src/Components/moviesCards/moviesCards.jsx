@@ -56,12 +56,10 @@ class MoviesCard extends Component {
   }
 
 OnRadioCustom = () => {
-    console.log("OnRadioCustom")
     $("#fechaDiv").removeClass('hidden');
   }
 
   OnRadioOther = () => {
-    console.log("OnRadioCustom")
     $("#fechaDiv").addClass('hidden');
     var filter_by = $("#date_filter").val()
     if (filter_by != "A"){
@@ -110,7 +108,6 @@ OnRadioCustom = () => {
 
   render() {
     const movies = this.state.movies
-  console.log(movies)
     return (
       <div className="movies-content">
         <NewMovie />

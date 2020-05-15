@@ -22,9 +22,19 @@ class Api::V1::MoviesController < ApplicationController
         render json: {errors: @movie.errors.full_messages}, status: :unprocessable_entity
       end
     elsif params[:name]
-      @movies = Release.where("name ILIKE ?", "%#{params[:name]}%") 
-      p @movies
-      render json: @movies
+      name = params[:name]
+      movies_count =  Movie.where(name: name).count == 1 
+      return render json: {errors: "movie already exists"}, status: 409 if movies_count
+
+      release = Release.where(name: name).first
+      return render json: {errors: "movie does not exist"}, status: 404 if release.nil?
+
+      @movie = Movie.create(release.attributes) if release.attributes
+      if @movie.save!
+        render json: @movie
+      else
+        render json: {errors: @movie.errors.full_messages}, status: :unprocessable_entity
+      end
     end
     
   end
@@ -51,6 +61,12 @@ class Api::V1::MoviesController < ApplicationController
       @movies = Movie.where(release_date: filter).all
     end
     render json: @movies
+  end
+
+  def titles
+    filter = params[:name]
+    @titles = Release.where("name ILIKE ?", "%#{filter}%").pluck(:name)
+    render json: @titles
   end
 
   private
