@@ -1,0 +1,393 @@
+.movies-content {    
+   
+   margin-left: 200px;
+}
+
+.movie-card {
+    background: #ffffff;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    
+    float: left;
+}
+
+.movie-header {
+    padding: 0;
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.background-image {
+    background-size: 100% 90% !important;
+    background-repeat: no-repeat !important;
+}
+
+.header-icon-container {
+    position: relative;
+}
+
+.header-icon {
+    /* width: 100%;
+    height: 167px; */
+    /* line-height: 167px; */
+    /* text-align: center;
+    vertical-align: middle;
+    margin: 0 auto; */
+    /* color: #ffffff;
+    font-size: 54px; */
+    /* text-shadow: 0px 0px 20px #6abcea, 0px 5px 20px #6ABCEA; */
+    opacity: 0;
+}
+
+    .header-icon:hover {
+        /* background: rgba(0, 0, 0, 0.15);
+        font-size: 24px; */
+        /* text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA; */
+        /* border-top-left-radius: 10px;
+        border-top-right-radius: 10px; */
+        opacity: 1;
+    }
+
+.movie-card:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.movie-content {
+    padding: 8px 8px 4px 8px;
+    margin: 0;
+}
+
+.movie-content-header, .movie-info {
+    display: table;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 14px;
+    margin: 0;
+    display: table-cell;
+    color: #0091ea;
+}
+
+.imax-logo {
+    width: 20px;
+    height: 15px;
+    background: url("https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/media_kit/3e27ede823afbf139c57f1c78a03c870.jpg") no-repeat;
+    background-size: contain;
+    display: table-cell;
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+
+.movie-info {
+    margin-top: 1em;
+}
+
+.info-section {
+    display: table-cell;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+    .info-section:first-of-type {
+        text-align: left;
+    }
+
+    .info-section:last-of-type {
+        text-align: right;
+    }
+
+    .info-section label {
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: .5em;
+        font-size: 9px;
+    }
+
+    .info-section span {
+        font-weight: 700;
+        font-size: 11px;
+    }
+
+    .button-row {
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    button {
+        display: inline-block;
+        padding: 6px 12px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 4px;
+        min-height: 1em;
+        -webkit-transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease;
+        transition: opacity .1s ease,background-color .1s ease,color .1s ease,box-shadow .1s ease,background .1s ease,-webkit-box-shadow .1s ease;
+        -webkit-tap-highlight-color: transparent;
+        border: 0;
+        background-image: none;
+    }
+
+       
+
+        button:disabled {
+            background-color: #c6c6c6 !important;
+            color: #FFF;
+            text-shadow: none;
+            -webkit-transition: background .2s;
+            transition: background .2s;
+            cursor:not-allowed;
+           
+        }
+
+        button.btn-reserve {
+            background-color: #3498db;
+            color: #FFF;
+            margin-top: 150px;
+        }
+
+        button.btn-new {
+        background-color: #3498db;
+            color: #FFF;
+            text-shadow: none;
+            -webkit-transition: background .2s;
+            transition: background .2s;
+            margin-top: 30px;
+        }
+
+    .selectDate{
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .date-row{
+        margin-left: 10px;
+    }
+
+@media screen and (max-width: 700px) {
+
+    .movie-card {
+        width: 40%;
+        max-width: 40%;
+        margin: 10px;
+        margin-left: 20px;
+        display: block;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+    }
+
+    .movies-content {    
+        margin-left: 0px;
+     }
+
+     .button-row{
+        width: 40%;
+        max-width: 40%;
+        margin: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
+
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px #c6c6c6 solid;
+    border-radius: 3px;
+}
+
+.btn-group>.btn:first-child {
+    margin-left: 0;
+}
+
+.btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius: 0;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#radioBtn .notActive{
+    color: #3498db;
+    background-color: #fff;
+
+
+    
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #285e8e;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.col40{
+    width:40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+input.search[type=text] {
+    width: 150px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left:0px;
+    
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input.search[type=text]:focus {
+    width: 80%;
+    margin-left:0px;
+  }
+
+
+  /* Dropdown Button */
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 5px;
+   
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 10px ;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #3498db; color:white;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3498db;}
+
+@media screen and (max-width: 400px) {
+
+    .movie-card {
+        width: 80%;
+        max-width: 80%;
+        margin: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: block;
+    }
+
+    .container {
+        padding: 0;
+        margin: 0;
+        margin-left:0px;
+    }
+
+    .movies-content {    
+        margin-left: 0px;
+     }
+
+     .button-row{
+        width: 80%;
+        max-width: 80%;
+        margin: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
