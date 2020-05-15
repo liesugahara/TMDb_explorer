@@ -1,0 +1,1 @@
+Tmdb::Api.key(ENV["moviedb_api_key"])
